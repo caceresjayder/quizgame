@@ -82,7 +82,7 @@ export default function QuizRender() {
   const StepperTab = (item: any, idx: number) => {
     if (stepperState.step === idx) {
       return (
-        <Card sx={{ p: 2, width: 400 }}>
+        <Card sx={{ p: 2, width: {xs: '100%', sm: 500, mx:"auto"} }}>
           <Typography>{item.proposition}</Typography>
           <Typography mt={4}>{item.question}</Typography>
           <FormControl sx={{ my: 4 }}>
